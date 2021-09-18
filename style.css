@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+.container {
+    background-color: #f1f1f1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://picsum.photos/1080/1920);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formContainer {
+    background-color:#9e2b25;
+    opacity: 0.95;
+    width: 50vw;
+    height: 100vh;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#description {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.form {
+    padding: 0.5rem 5rem;
+}
+
+.btn {
+    background-color: lightslategrey;
+    color: white;
+    padding: 1rem;
+    margin: 10px 0;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.fillOut {
+    display: block;
+}
+
+textarea {
+    min-height: 100px;
+    width: 80%;
+}

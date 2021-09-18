@@ -1,24 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana</title>
+    <title>Screen time usage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav></nav>
-    <div></div>
-    <h1></h1>
-    <h2></h2>
-    <h6></h6>
-    <iframe></iframe>
-    <ul>
-        <li></li>
-    </ul>
-    <a></a>
-    <img>
-    <label></label>
-    <form></form>
+<body class="container">
+<main class="formContainer">
+    <h1 id="title">Media Survey</h1>
+    <p id="description">Thank you for filling out this survey</p>
+<form id="survey-form">
+    <div class="form" id="nameInput">
+        <label id="name-label" for="name">What is your name?</label>
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="Name"
+            class="fillOut" 
+            required>
+    </div>
+    <div class="form" id="emailInput">
+        <label id="email-label" for="email">What is your email?</label>
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Email"
+            class="fillOut"  
+            required>
+        </div>
+    </div>
+    <div class="form" id="numberInput">
+        <label id="number-label" for="age">What is your Age?</label>
+        <input 
+        type="number" 
+        id="number" 
+        placeholder="Age"
+        min="10"
+        max="123"
+        class="fillOut"  
+        required>
+    </div>
+    </div>
+    <div class="form" id="dropdownGroup">
+        <p>How many hours a week do you spend watching content on the internet?</p>
+        <select
+            id="dropdown"
+            required>
+            <option disabled selected value>Number of Hours</option>
+            <option value="0-2">0 to 2</option>
+            <option value="2-4">2 to 4</option>
+            <option value="4-6">4 to 6</option>
+            <option value="6-8">6 to 8</option>
+            <option value="8-10">8 to 10</option>
+            <option value="10+">10+</option>
+        </select>
+    </div>
+    <div class="form" id="radioButtons">
+        <p>Do you think you spend too much time watching content on the internet?</p>
+        <label for="yes">
+            <input
+                name="user-watchtime"
+                value="yes"
+                type="radio"
+                class="input-radio"
+            />Yes
+        </label>
+        <label for="no">
+            <input
+                name="user-watchtime"
+                value="no"
+                type="radio"
+                class="input-radio"
+            />No
+        </label>
+    </div>
+    <div class="form">
+        <p>What kinds of digital content do you watch?</p>
+        <label>
+            <input
+                name="contentType"
+                value="livestreams"
+                type="checkbox"
+                class=input-checkbox
+            />Livestreams
+        </label>
+        <label>
+            <input
+                name="contentType"
+                value="userContent"
+                type="checkbox"
+                class="input-checkbox"
+            />Amateur content (e.g. youtube)
+        </label>
+        <label>
+            <input
+                name="contentType"
+                value="movies"
+                type="checkbox"
+                class="input-checkbox"
+            />Professional content (e.g. movies)
+        </label>
+    </div>
+    <div class="form">
+        <p>Any comments? Please let us know!</p>
+        <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Please let us know your comment here..."
+        ></textarea>
+    </div>
+    <div class="form">
+        <button type="submit" id="submit" class="btn">
+            Press to submit
+        </button>
+    </div>
+</form>
+</main>
 </body>
-</html>
