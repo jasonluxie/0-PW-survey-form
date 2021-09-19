@@ -5,6 +5,7 @@
     font-size: 1.1rem;
     color: white;
 }
+
 .container {
     background-color: #f1f1f1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -18,7 +19,7 @@
     background-color:#9e2b25;
     opacity: 0.95;
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     border-radius: 15px;
     position: absolute;
     top: 50%;
